@@ -21,17 +21,17 @@
         <script type="text/javascript">
             //My api key
             var apikey = {
-                key: 'SUA API KEY AQUI:)'
+                key: '94466ec5-0a31-4b05-9a6a-fac1bcb76c60'
             }
 
         //GET Fetch Requisition
-        fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?CMC_PRO_API_KEY=' +
-                apikey.key)
+        fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?CMC_PRO_API_KEY=94466ec5-0a31-4b05-9a6a-fac1bcb76c60')
                 .then((response) => {
                     if(!response.ok) throw new Error('Erro ao executar a requisição, status ' + response.status);
                     return response.json();
             })
             .then((api) => {
+                console.log(api);
                 
                 var texto = "";
                 // Get 10 coins and symbols 
